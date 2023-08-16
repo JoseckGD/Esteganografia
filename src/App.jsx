@@ -72,7 +72,7 @@ function App() {
     //El bit menos significativo del componente de color rojo se modifica para coincidir con el bit
     //más significativo del byte del texto, permitiendo así ocultar información en la imagen.
 
-    for (let i = 0; i < imageData.data.length; i += textBytes.length) {
+    for (let i = 0; i < imageData.data.length; i += 4) {
       if (byteIndex < textBytes.length) {
         //R
         imageData.data[i] =

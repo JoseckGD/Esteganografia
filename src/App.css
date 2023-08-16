@@ -1,0 +1,10 @@
+#root {
+  margin: 0;
+  padding: 0 2em;
+  text-align: center;
+}
+
+section,
+button {
+  margin: 1rem;
+}
